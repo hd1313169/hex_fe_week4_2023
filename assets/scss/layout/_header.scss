@@ -1,0 +1,9 @@
+.navbar {
+  width: 296px;
+}
+
+.nav-link{
+  &:hover{
+    color: $success !important;
+  }
+}

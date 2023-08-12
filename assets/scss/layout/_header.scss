@@ -1,9 +1,40 @@
+a{
+  text-decoration: none !important;
+}
 .navbar {
   width: 296px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start !important;
 }
 
+.nav-item-active{
+  position: relative;
+  a{
+    color: $success !important;
+  }
+  &::before{
+    content: "";
+    width: 4px;
+    height: 32px;
+    background-color: $success;
+    position: absolute;
+    top: 0;
+    left: -32px;
+  }
+}
 .nav-link{
   &:hover{
     color: $success !important;
   }
+}
+
+.user-img{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  
 }

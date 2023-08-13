@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <script type="module" crossorigin src="/hex_fe_week4_2023/assets/main-ce359e92.js"></script>
+  <link rel="stylesheet" href="/hex_fe_week4_2023/assets/main-d2e0a39d.css">
+</head>
+
+<body>
+  <div class="d-flex">
+    <div class="navbar p-32">
+  <div>
+    <div class="mb-32">
+      <a class="nav-link active" aria-current="page" href="#"><img
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/week5/logo-ANSWER.svg"
+          alt="logo"></a>
+    </div>
+
+
+    <ul class="nav flex-column">
+
+      <li class="nav-item mb-24">
+        <a class="nav-link text-dark fw-bold" href="#"><span class="material-symbols-outlined align-bottom me-16">
+            insert_chart
+          </span>Dashboard</a>
+      </li>
+      <li class="nav-item mb-24">
+        <a class="nav-link text-dark fw-bold" href="#"><span class="material-symbols-outlined align-bottom me-16">
+            <span class="material-symbols-outlined">
+              forum
+            </span>
+          </span>Question</a>
+      </li>
+      <li class="nav-item mb-24">
+        <a class="nav-link text-dark fw-bold" href="../pages/index.html"><span class="material-symbols-outlined align-bottom me-16">
+            <span class="material-symbols-outlined">
+              assignment
+            </span>
+          </span>Assignment</a>
+      </li>
+      <li class="nav-item mb-24">
+        <a class="nav-link text-dark fw-bold" href="#"><span class="material-symbols-outlined align-bottom me-16">
+            <span class="material-symbols-outlined">
+              video_library
+            </span>
+          </span>Course</a>
+      </li>
+      <li class="nav-item nav-item-active mb-24">
+        <a class="nav-link text-dark fw-bold" href="../pages/admin.html"><span class="material-symbols-outlined align-bottom me-16">
+            <span class="material-symbols-outlined">
+              group
+            </span>
+          </span>Admin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark fw-bold" href="#"><span class="material-symbols-outlined align-bottom me-16">
+            <span class="material-symbols-outlined">
+              settings
+            </span>
+          </span>Settings</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="d-flex">
+    <img class="d-block user-img me-16"
+    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" alt="user">
+    <div>
+      <h2 class="fs-16 fw-bold mb-4">Andy Chen</h2>
+      <p class="fs-14 text-secondary">andy0401@mail.com</p>
+    </div>
+  </div>
+
+</div>
+      <div class="d-flex flex-column w-100 p-32">
+        <!-- header -->
+        <div class="header d-flex justify-content-between w-100">
+          <div class="d-flex w-100">
+            <h1 class="fs-24 fw-bold ff-lato me-48">Assignment</h1>
+            <!-- Modal 按鈕 -->
+            <button type="button" class="btn btn-light fw-bold btn-hover-light" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              <span class="material-symbols-outlined me-8 text-success align-bottom">
+                add
+              </span>Add New Admin
+            </button>
+
+            <!-- Modal 元件 -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">New Admin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6 class="fs-16 fw-bold mb-16">Account</h6>
+                    <div class="mb-16">
+                      <label for="name" class="form-label fs-14 mb-4">Name</label>
+                      <input type="text" class="form-control rounded-0" id="name" placeholder="">
+                    </div>
+                    <div class="border-bottom pb-24 mb-24">
+                      <label for="email" class="form-label fs-14 mb-4">Email</label>
+                      <input type="email" class="form-control rounded-0" id="email" placeholder="">
+                    </div>
+                    <h6 class="fs-16 fw-bold mb-16">Verification</h6>
+                    <div class="border-bottom pb-24 mb-24">
+                      <label for="email" class="form-label fs-14 mb-4 fw-bold"><span
+                          class="material-symbols-outlined text-danger fs-20 me-8 mb-4 align-bottom">
+                          warning
+                        </span>Unverified</label>
+                      <input type="button" class="form-control py-16 text-success fw-bold rounded-0" id="button" placeholder=""
+                        value="Send Verification Mail">
+                    </div>
+                    <h6 class="fs-16 fw-bold mb-16">Verification</h6>
+                    <div class="dropdown border-bottom pb-24 mb-24">
+                      <button class="btn btn-gray-light dropdown-toggle bg-light text-secondary w-100 text-start py-16 rounded-0"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        -Choose access level-
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Level 1</a></li>
+                        <li><a class="dropdown-item" href="#">Level 2</a></li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="#" class="btn btn-light border-success text-success fs-16 fw-bold px-32 py-8 me-16 rounded-0">Cancel</a>
+                    <a href="#" class="btn btn-success text-light fs-16 fw-bold px-32 py-8 me-16 rounded-0">Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal end -->
+
+          </div>
+          <div class="d-flex">
+            <a href="#" class="link link-dark"><span class="material-symbols-outlined me-24">
+                search
+              </span></a>
+            <a href="#" class="link link-dark"><span class="material-symbols-outlined">
+                notifications
+              </span></a>
+          </div>
+        </div>
+        <!-- header end -->
+
+        <!-- 表格 -->
+        <table class="table">
+          <thead class="border-bottom border-dark border-2 pb-4">
+            <tr>
+              <th scope="col">ID <a href="#" class="link link-success"><span
+                    class="material-symbols-outlined align-middle fs-20 me-8">
+                    arrow_downward
+                  </span></a></th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Verified</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 列1 -->
+            <tr>
+              <td>#1</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td><a href="@" class="link link-dark me-24"><span class="material-symbols-outlined fs-16">
+                    visibility
+                  </span></a>
+                <a href="@" class="link link-dark"><span class="material-symbols-outlined fs-16">
+                    edit
+                  </span></a>
+              </td>
+            </tr>
+
+            <!-- 列2 -->
+            <tr>
+              <td>#2</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td><a href="@" class="link link-dark me-24"><span class="material-symbols-outlined fs-16">
+                    visibility
+                  </span></a>
+                <a href="@" class="link link-dark"><span class="material-symbols-outlined fs-16">
+                    edit
+                  </span></a>
+              </td>
+            </tr>
+
+            <!-- 列3 -->
+            <tr>
+              <td>#3</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td><a href="@" class="link link-dark me-24"><span class="material-symbols-outlined fs-16">
+                    visibility
+                  </span></a>
+                <a href="@" class="link link-dark"><span class="material-symbols-outlined fs-16">
+                    edit
+                  </span></a>
+              </td>
+            </tr>
+
+            <!-- 列4 -->
+            <tr>
+              <td>#4</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td><a href="@" class="link link-dark me-24"><span class="material-symbols-outlined fs-16">
+                    visibility
+                  </span></a>
+                <a href="@" class="link link-dark"><span class="material-symbols-outlined fs-16">
+                    edit
+                  </span></a>
+              </td>
+            </tr>
+
+            <!-- 列5 -->
+            <tr>
+              <td>#5</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td><a href="@" class="link link-dark me-24"><span class="material-symbols-outlined fs-16">
+                    visibility
+                  </span></a>
+                <a href="@" class="link link-dark"><span class="material-symbols-outlined fs-16">
+                    edit
+                  </span></a>
+              </td>
+            </tr>
+
+            <!-- 列6 -->
+            <tr>
+              <td>#6</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td><a href="@" class="link link-dark me-24"><span class="material-symbols-outlined fs-16">
+                    visibility
+                  </span></a>
+                <a href="@" class="link link-dark"><span class="material-symbols-outlined fs-16">
+                    edit
+                  </span></a>
+              </td>
+            </tr>
+
+            <!-- 列7 -->
+            <tr>
+              <td>#7</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td><a href="@" class="link link-dark me-24"><span class="material-symbols-outlined fs-16">
+                    visibility
+                  </span></a>
+                <a href="@" class="link link-dark"><span class="material-symbols-outlined fs-16">
+                    edit
+                  </span></a>
+              </td>
+            </tr>
+
+            <!-- 列8 -->
+            <tr>
+              <td>#8</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td><a href="@" class="link link-dark me-24"><span class="material-symbols-outlined fs-16">
+                    visibility
+                  </span></a>
+                <a href="@" class="link link-dark"><span class="material-symbols-outlined fs-16">
+                    edit
+                  </span></a>
+              </td>
+            </tr>
+
+            <!-- 列9 -->
+            <tr>
+              <td>#9</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td><a href="@" class="link link-dark me-24"><span class="material-symbols-outlined fs-16">
+                    visibility
+                  </span></a>
+                <a href="@" class="link link-dark"><span class="material-symbols-outlined fs-16">
+                    edit
+                  </span></a>
+              </td>
+            </tr>
+
+            <!-- 列10 -->
+            <tr>
+              <td>#10</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td><a href="@" class="link link-dark me-24"><span class="material-symbols-outlined fs-16">
+                    visibility
+                  </span></a>
+                <a href="@" class="link link-dark"><span class="material-symbols-outlined fs-16">
+                    edit
+                  </span></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- 表格 end-->
+
+        <ul class="pagination justify-content-end">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item" aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+  
+</body>
+
+</html>

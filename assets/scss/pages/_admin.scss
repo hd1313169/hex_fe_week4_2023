@@ -1,20 +1,29 @@
-.ff-roboto{
+.ff-roboto {
   font-family: 'Roboto Mono';
 }
 
-.dropdown-toggle{
-  &::after{
+.dropdown-toggle {
+  &::after {
     color: $success !important;
   }
 }
 
-.link-dark:hover, .link-dark:focus{
-    color: $success !important;
+.link-dark:hover,
+.link-dark:focus {
+  color: $success !important;
 }
 
-.btn-light{
-  &:hover{
+.btn-light {
+  &:hover {
     background-color: $success !important;
     color: $light !important;
+  }
+}
+
+.btn-hover-light {
+  &:hover {
+    span {
+      color: $light !important;
+    }
   }
 }
